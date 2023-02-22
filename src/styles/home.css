@@ -1,0 +1,172 @@
+.home__article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home__pokedex-svg {
+    width: 676px;
+        height: 121px;
+    
+        margin-bottom: 30px;
+        margin-top: 10px;
+  }
+  
+  .home__article-title {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+color: #FE1936;
+    text-align: center;
+  }
+
+  .home__article-subtitle{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+color: #302F2F;
+  }
+  
+  .home__form {
+    display: flex;
+    justify-content: center;
+    height: 1.7em;
+    margin-bottom: 2.5em;
+    margin-top: 1.2em;
+  }
+
+  .home__button:hover{
+    font-weight: 700;
+      filter: brightness(1.1);
+      box-shadow: 0 0 20px 2px #D93F3F;;
+  }
+  
+  .home__input {
+    width: 100%;
+    height: 29px;
+    border: .1px solid #5e5b5b;
+    border-right: none;
+    max-width: 150px;
+    padding-left: 1em;
+    border-radius: 0.5em 0 0 0.5em;
+  }
+  
+  .home__button {
+    width: 80px;
+    height: 32.5px;
+    border: none;
+    border-radius: 0 .5em .5em 0;
+    background-color: #D93F3F;;
+    color: #fff;
+    font-weight:700 ;
+    transition: font-weight 100ms ease, filter 100ms ease;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+  
+  .home__button:hover {
+    
+        font-weight: 700;
+          filter: brightness(1.1);
+          box-shadow: 0 0 20px 2px #D93F3F;;
+      }
+  
+.home__footer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #fe1936 50%, #000000 50%);
+    height: 180px;
+    margin-top: auto;
+    
+}  
+
+.home__pokeball{
+    width: 60px;
+    position: relative;
+    top: 0.em;
+}
+
+/*RESPONSIVE */
+
+@media (max-width: 767px){
+    .home__article-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    .home__pokedex-svg {
+        width: 200px;
+            height: 121px;
+        
+            margin-bottom: 30px;
+            margin-top: 10px;
+      }
+      
+      .home__article-title {
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FE1936;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: .5em;
+      }
+    
+      .home__article-subtitle{
+        align-items: center;
+            font-weight: 500;
+            font-size: 15px;
+            margin-bottom: .5em;
+
+      }
+
+      .home__form{
+        align-items: center;
+        justify-content: center;
+        margin-left: 2.5em;
+      }
+      
+      
+    .home__footer{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        width: 100%;
+        background: linear-gradient(to bottom, #fe1936 50%, #000000 50%);
+        margin-top: auto;
+        height: 180px;
+        
+    }  
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .home__article-title {
+        margin-top: 2em;
+      }
+    
+      .home__article-subtitle{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #302F2F;
+    margin-top: 1em;
+    margin-bottom: 1em;
+      }
+}

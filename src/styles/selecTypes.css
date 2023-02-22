@@ -1,0 +1,38 @@
+.select__box {
+  display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #555;
+    font-size: 16px;
+    height: 32px;
+    padding: 0 5px;
+    width: 140px;
+    margin-right: 20px;
+  }
+  
+  .select__box:hover {
+    cursor: pointer;
+    border: 1px solid #555;
+    filter: brightness(1.1);
+      box-shadow: 0 0 20px 2px #555;;
+    
+  }
+  
+  .option__all {
+    color: #555;
+  }
+  
+  .option__all:hover {
+    background-color: #f00;
+    color: #fff;
+  }
+  
+  .option__only-one {
+    color: #555;
+  }
+  
+  .option__only-one:hover {
+    background-color: #f00;
+    color: #fff;
+  }
+  
