@@ -281,59 +281,60 @@
 }
 
 .color-grass{
-color: #7ec6c5 ;
+color: #7ec6c5 !important; 
+
 }
 .color-fire{
-  color: #F96D6F;
+  color: #F96D6F !important;
 }
 .color-water{
-  color: #133258;
+  color: #133258 !important;
 }
 .color-bug{
- color: #3BB039
+ color: #3BB039 !important;
 }
 .color-normal{
-  color: #BC6B7C
+  color: #BC6B7C !important;
 }
 .color-poison{
- color: #5B3184
+ color: #5B3184!important;
 }
 .color-fighting{
-color: #96402A 
+color: #96402A !important;
 }
 .color-electric{
-color: #2B319B;
+color: #2B319B!important;;
 }
 .color-ground{
-color:  #654008 
+color:  #654008!important; 
 }
 
 .color-fairy{
-color: #f50077
+color: #f50077!important;
 }
 .color-psychic{
-color: #ce919c
+color: #ce919c!important;
 }
 .color-rock{
-color: #D3D3D3
+color: #D3D3D3!important;
 }
 .color-ghost{
-color: #323569 
+color: #323569!important; 
 }
 
 .color-dark{
-color: #0D1211
+color: #0D1211!important;
 }
 
 .color-ice{
-color: #BDEBFE;
+color: #BDEBFE!important;;
 }
 .color-steel{
-color: #5E736C ;
+color: #5E736C!important; ;
 }
 .color-magic{
-color: #d2c84a;
+color: #d2c84a!important;;
 }
 .color-dragon{
-color: #793333;
+color: #793333!important;;
 }
