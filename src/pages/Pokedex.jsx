@@ -47,8 +47,8 @@ const Pokedex = () => {
 <div className='pokedex'>
   <header className='pokedex__header'>
    
-    <img className='pokedex_svg' src="../../public/logo-pokedex.svg" alt="pokedex_image" />
-    <img className= 'pokeball__header'src="../../public/pokeball (1).png" alt="" />
+    <img className='pokedex_svg' src="/images/logo-pokedex.svg" alt="pokedex_logo" />
+    <img className= 'pokeball__header'src="images/pokeball (1).png" alt="pokeball" />
     
   </header>
   <h1 className='pokedex__title'><span className='pokedex__title-name'> {nameTrainer}</span>, here you can find your favorite pokemon</h1>
@@ -70,11 +70,6 @@ const Pokedex = () => {
       ))
     }
   </div>
-{/* <div className='podekex__circle-container'>
-   <div className='pokedex__circle-1'></div>
-  <div className='pokedex__circle'></div>  
-  </div> */}
-
 </div>
 
   )

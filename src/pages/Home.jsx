@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <article className='home__article-container'>
-        <img className='home__pokedex-svg' rel="svg"  src={process.env.PUBLIC_URL + '/images/logo-pokedex.svg'} />
+        <img className='home__pokedex-svg' rel="svg"  alt="pokedex_logo"  src="/images/logo-pokedex.svg" />
         <h1 className='home__article-title'>Hi Trainer!</h1>
         <h2 className='home__article-subtitle'>Give your name, to startt</h2>
         <form className='home__form' onSubmit={handleSubmit}>
@@ -29,7 +29,7 @@ const Home = () => {
         </form>
         
         <footer className='home__footer'>
-          <img className='home__pokeball' src="../../public/pokeball (1).png" alt="" />
+          <img className='home__pokeball' src="/images/pokeball (1).png" alt="pokeball" />
         </footer>
         
     </article>

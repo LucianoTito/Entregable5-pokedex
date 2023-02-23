@@ -6,7 +6,7 @@ const Header = () => {
       <div className='pokedex'>
           <header className='pokedex__header'>
 
-              <img className='pokedex_svg' src="../../public/logo-pokedex.svg" alt="pokedex_image" />
+              <img className='pokedex_svg' src="/images/logo-pokedex.svg" alt="pokedex_logo" />
              
           </header>
           <div className='podekex__circle-container'>

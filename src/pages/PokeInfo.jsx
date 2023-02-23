@@ -28,7 +28,7 @@ const PokeInfo = () => {
     return (
         <>
         <Header/>
-        <img className='pokeball__header' src="../../public/pokeball (1).png" alt="" />
+        <img className='pokeball__header' src="/images/pokeball (1).png" alt="pokeball" />
         <article className='poke__info-article'>
             
             <header className={`poke__info-header bg-${poke?.types[0].type.name}`}>
@@ -72,7 +72,7 @@ const PokeInfo = () => {
                     <div className='pokemon__info-stats-container'>
                         <div className='pokemon__info-stats-separator'>
                             <div className='vector__3'></div>
-                            <img className='pokeball' src="../../public/pokeball.png" alt="" />
+                            <img className='pokeball' src="/images/pokeball.png" alt="pokeball_grey" />
                             <h3 className='pokemon__info-stats-name'>Stats</h3>
                             <ul className='pokemon__info-stats-list'>
                                 {poke?.stats.map(stat => (
@@ -97,7 +97,7 @@ const PokeInfo = () => {
             <header className='poke__info-card-2-header'>
                 
         <h3 className='card__2-name'>Movements</h3>
-        <img className='pokeball__2' src="../../public/pokeball.png" alt="" />
+        <img className='pokeball__2' src="/images/pokeball.png" alt="pokeball_grey" />
         <div className='vector__4'></div>
         </header>
         <section className='poke__body-card-2'>
