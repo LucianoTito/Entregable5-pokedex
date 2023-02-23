@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <article className='home__article-container'>
-         <img className='home__pokedex-svg' src="./logo-pokedex.svg" alt="pokedex_image" />
+         <link className='home__pokedex-svg' rel="icon" type="image/svg+xml" href="/public/images/logo-pokedex.svg" />
         <h1 className='home__article-title'>Hi Trainer!</h1>
         <h2 className='home__article-subtitle'>Give your name, to start</h2>
         <form className='home__form' onSubmit={handleSubmit}>
