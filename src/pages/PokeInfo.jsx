@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Pokedex/Shared/Header';
 import '../styles/pokeInfo.css'
+import '../components/Pokedex/Shared/styles/errorMessage.css'
 
 const PokeInfo = () => {
   const [hasError, setHasError] = useState(false);
@@ -23,7 +24,8 @@ const PokeInfo = () => {
   }, [id]);
 
   if (hasError) {
-    return <> <article className='article__error'><h1 className='title__error'>The Pokemon with name "{id}" not found</h1><img className='img__error' src="/images/pokemon_error.svg" alt="poke_error" /></article> </>;
+    return <> <body className='body__error'><article className='article__error'><h1 className='title__error'>The Pokemon with name "{id}" not found</h1><img className='img__error' src="/images/pokemon_error.svg" alt="poke_error" /></article></body>  </>;
+    
   } else {
     return (
         <>
