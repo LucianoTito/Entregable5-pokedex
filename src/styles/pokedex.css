@@ -108,40 +108,44 @@
     height: 92px;
   }
 
-
-
-
-
-
-  .pokedex__circle-1{
+  /* ERROR MESSAGE DESING */
+  .article__error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em; 
+    }
     
- position: absolute;
-    top: 20%;
-    left: calc(100% - 200px);
-    transform: translateY(-50%);
-    width: 117px;
-    height:117px;
-    border-radius: 50%;
-    background: #ffffff;
-    border: 12px solid #000000;
-    z-index: 1;
-  }
-  
-  .pokedex__circle {
-   
-    position: absolute;
-        top: 10%;
-        left: calc(100% - 172px);
-        transform: translateY(-50%);
-        width: 63px;
-        height: 63px;
-        border-radius: 50%;
+    .title__error {
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(252, 11, 11);
+    padding: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Inter';
+    }
     
-        background: #212121;
-        border: 12px solid #000000;
-        z-index: 2;
+    .img__error {
+      height: 150px;
+    animation: tilt 3s infinite;
+    margin-top: 20px;
+    }
     
-  }
+    @keyframes tilt {
+    from {
+    transform: rotate(360deg);
+    }
+    to {
+      transform:scale(1.4)
+      }
+    }
+
+    body{
+      height: 100vh;
+    background: linear-gradient(to bottom, #ffbfbf, #ffcfcf);
+    }
   
 
   /*RESPONSIVE */
@@ -171,21 +175,6 @@
         
       }
 
-
-    .pokedex__circle-1{
-    
-        position: absolute;
-        top: calc(15% - 50px);
-           left: calc(130% - 200px);
-           transform: translateY(-50%);
-           width: 50px;
-           height:50px;
-           border-radius: 50%;
-           background: #ffffff;
-           border: 9px solid #000000;
-           z-index: 1;
-         }
-
          .navigator__container{
           display: flex;
           justify-content: start;
@@ -193,6 +182,12 @@
           flex-direction: column;
           width: 340px;
         }
+
+        ::placeholder {
+          color: #bebebe;
+          font-size: .85em;
+          font-style: italic;
+      }
         .form__btn{
           width: 80px;
           height: 33px;
@@ -205,23 +200,23 @@
           cursor: pointer;
           margin-right: 20px;
       }
-         
-         .pokedex__circle {
-          
-           position: absolute;
-               top: calc(15% - 50px);
-               left: calc(130% - 180px);
-               transform: translateY(-50%);
-               width: 13px;
-               height: 13px;
-               border-radius: 50%;
-           
-               background: #212121;
-               border: 8px solid #000000;
-               z-index: 2;
-           
-         }
     
+
+    /*ERROR MESSAGE DESING */
+    .title__error {
+      font-size: 28px;
+      font-weight: bolder;
+      color: rgb(252, 11, 11);
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Inter';
+      }
+      
+      .img__error {
+        height: 80px;
+      animation: tilt 3s infinite;
+      margin-top: 20px;
+      }
     }
 
     @media only screen and (min-width: 481px) and (max-width: 1023px){
@@ -231,44 +226,25 @@
         height: 60px;
         position: relative;
         left: 23%;
-        top:20%
-        
+        top:20% 
       }
-        .pokedex__circle-container{
-            display: block;
-            position: absolute;
-            width: fit-content;
-            height: fit-content;
-        }
-        .pokedex__circle-1{
-    
-            position: absolute;
-            top: calc(12% - 10px);
-               left: calc(90% - 20px);
-               transform: translateY(-50%);
-               width: 70px;
-               height:70px;
-               border-radius: 50%;
-               background: #ffffff;
-               border: 9px solid #000000;
-               z-index: 1;
-             }
-             
-             .pokedex__circle {
-              
-               position: absolute;
-                   top: calc(12% - 10px);
-                   left: calc(92.6% - 20px);
-                   transform: translateY(-50%);
-                   width: 33px;
-                   height: 33px;
-                   border-radius: 50%;
-               
-                   background: #212121;
-                   border: 8px solid #000000;
-                   z-index: 2;
-               
-             }
+
+             /*ERROR MESSAGE DESING */
+    .title__error {
+      font-size: 50px;
+      font-weight: bolder;
+      color: rgb(252, 11, 11);
+      margin-bottom: 20px;
+      padding: 2em;
+      text-align: center;
+      font-family: 'Inter';
+      }
+      
+      .img__error {
+        height: 200px;
+      animation: tilt 3s infinite;
+      margin-top: 100px;
+      }
         
         
     }

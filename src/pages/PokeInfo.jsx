@@ -23,7 +23,7 @@ const PokeInfo = () => {
   }, [id]);
 
   if (hasError) {
-    return <h1>The Pokemon with name "{id}" not found</h1>;
+    return <> <article className='article__error'><h1 className='title__error'>The Pokemon with name "{id}" not found</h1><img className='img__error' src="/images/pokemon_error.svg" alt="poke_error" /></article> </>;
   } else {
     return (
         <>
