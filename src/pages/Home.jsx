@@ -10,6 +10,8 @@ const Home = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
+    
+
     const handleSubmit = e => {
         e.preventDefault ()
         dispatch(setNameTrainer(e.target.name.value.trim()))  
