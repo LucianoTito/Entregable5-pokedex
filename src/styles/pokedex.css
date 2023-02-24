@@ -189,14 +189,3 @@
       }
     
     }
-
-    @media only screen and (min-width: 481px) and (max-width: 1023px){
-
-      .pokedex__header  .pokeball__header{
-        width: 60px;
-        height: 60px;
-        position: relative;
-        left: 23%;
-        top:20% 
-      } 
-    }
