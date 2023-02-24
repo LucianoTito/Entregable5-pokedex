@@ -34,7 +34,7 @@ const Pokedex = () => {
 
   useEffect(() => {
     if (selectValue ==='allpokemons') {
-      const url = "https://pokeapi.co/api/v2/pokemon?limit=102&offset=0"
+      const url = "https://pokeapi.co/api/v2/pokemon?limit=80&offset=0"
       setLoading(true)
     axios.get(url)
     .then (res=> setPokemons(res.data))

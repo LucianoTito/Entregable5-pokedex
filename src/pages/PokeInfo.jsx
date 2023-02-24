@@ -136,7 +136,8 @@ const PokeInfo = () => {
                     ))}
                   </ul>
                 </section>
-              </article><footer className='poke__info-footer'>
+              </article>
+              <footer className='poke__info-footer'>
                 <button className='return__button' onClick={handleBackClick}>Back</button>
                 <button className='scroll__button' onClick={handleScrollToTop}>Go top</button>
               </footer>
