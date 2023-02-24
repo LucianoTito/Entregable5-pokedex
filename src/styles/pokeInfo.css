@@ -595,7 +595,7 @@ text-transform: capitalize;
     align-items: flex-start;  
     flex-direction: column;  
     width: 300px;  
-    margin-left: -3em;
+    margin-left: -1.5em;
     margin-top: 1em;
   }
 
