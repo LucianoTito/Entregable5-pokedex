@@ -55,7 +55,7 @@ const Pokedex = () => {
       .catch(err=> console.log(err))
       .finally(setTimeout(() => {
         setLoading(false)
-      }, 1000))
+      }, 1200))
     }
     
   }, [selectValue])
