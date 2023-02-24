@@ -87,12 +87,17 @@
   .pokemon__info-container {
         display: flex;
         flex-direction: column;
+        text-align: center;
         align-items: center;
         margin: auto;
       }
    .pokemon__info-container:hover{
     transform: scale(1.02);
     transition: .6s;
+   }
+
+   .pokemon__info-container{
+    display: flex;
    }
   
   
@@ -331,6 +336,31 @@
     font-weight: 500;
   }
 
+  .poke__info-footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  .scroll__button{
+    border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;     
+        font-size: 16px;
+        margin: 3em 0px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #ff595e;
+        margin-left: 2em;
+  }
+.scroll__button:hover{
+  font-weight: 700;
+      filter: brightness(1.1);
+      box-shadow: 0 0 20px 2px #D93F3F;
+}
   .bg-grass{
     background-image: linear-gradient(178.92deg, #7ec6c5 .92%, #abdac6 47.96%, #CAE099 99.08%);
   }
@@ -413,7 +443,7 @@
         flex-direction: column;
         align-items: center;  
         margin: auto;
-        width: 350px;
+        width: 310px;
         max-width: 350px;
         padding-bottom: 1em;
         margin-top: 5em;
@@ -427,7 +457,7 @@
         justify-content: center;
         margin-bottom: 1em;
         border-radius: 1px;
-        width: 350px;
+        width: 310px;
         height: 155px;}
 
         .pokemon__info-img {
@@ -449,7 +479,7 @@
             height: 0; 
             position: relative;
             top: 2.6em;
-            left: 12px;
+            left: 1px;
           }
           .vector__2{
             border-top: 1px solid #9F9F9F;
@@ -510,8 +540,8 @@ text-transform: capitalize;
     font-weight: 500;
     font-size: 18px;
     color: #0F0F2D;
-    margin: auto;
-    margin-left: 5em;
+    /* margin: auto; */
+    margin-right: 2em;
 }
 
 .pokemon__info-stats-container{
@@ -527,12 +557,12 @@ text-transform: capitalize;
     font-weight: 500;
     font-size: 18px;
     color: #0F0F2D;
-    margin: auto;
-    margin-right:1.9em;
+    padding-right: 1.1em;
+    margin-right:1em;
 }
 
 .pokemon__info-type-values .span__1{
-    margin-right: 1.8em;
+    margin-right: 1em;
 }
 
 .pokemon__info-type-values span{
@@ -644,7 +674,7 @@ text-transform: capitalize;
             flex-direction: column;
             align-items: center;
             margin: auto;
-            width: 350px;
+            width: 310px;
             margin-top: 2em;
             margin-bottom: 5em;
     }
@@ -673,7 +703,7 @@ text-transform: capitalize;
     
       .vector__4{
         border-top: 1px solid #D3D3D3;
-        width: 150px;
+        width: 120px;
         height: 0; 
         position: relative;
         top: 2.35em;
@@ -686,7 +716,7 @@ text-transform: capitalize;
         width: 20px;
         position: relative;
         top: 1.7em;
-        left: 9em;
+        left: 7em;
       }
     
       .poke__body-card-2{

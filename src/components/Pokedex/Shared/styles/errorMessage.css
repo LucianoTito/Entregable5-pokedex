@@ -34,6 +34,26 @@
       }
     }
 
+    .return__button{
+      display: flex;    
+        background-color: #ff595e;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;     
+        font-size: 16px;
+        margin: 3em 0px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .return__button:hover{
+      font-weight: 700;
+      filter: brightness(1.1);
+      box-shadow: 0 0 20px 2px #D93F3F;
+    }
+
   
   
 /*MOBILE DEVICES */

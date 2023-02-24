@@ -5,10 +5,25 @@ import Header from '../components/Pokedex/Shared/Header';
 import '../styles/pokeInfo.css'
 import '../components/Pokedex/Shared/styles/errorMessage.css'
 
+
+
+
 const PokeInfo = () => {
   const [hasError, setHasError] = useState(false);
   const { id } = useParams();
   const [poke, setPoke] = useState();
+
+  const handleBackClick = () => {
+    window.history.back();
+  };
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+
 
   useEffect(() => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
@@ -24,14 +39,15 @@ const PokeInfo = () => {
   }, [id]);
 
   if (hasError) {
-    return <> <body className='body__error'><article className='article__error'><h1 className='title__error'>The Pokemon with name "{id}" not found</h1><img className='img__error' src="/images/pokemon_error.svg" alt="poke_error" /></article></body>  </>;
+    return <> <body className='body__error'><article className='article__error'><h1 className='title__error'>The Pokemon with name "{id}" not found</h1><img className='img__error' src="/images/pokemon_error.svg" alt="poke_error" /><button className='return__button' onClick={handleBackClick}>Back</button></article></body>  </>;
     
   } else {
     return (
         <>
+        
         <Header/>
-        <img className='pokeball__header' src="/images/pokeball (1).png" alt="pokeball" />
-        <article className='poke__info-article'>
+        <img className='pokeball__header' src="/images/pokeball (1).png" alt="pokeball" /> 
+        <section className='poke__info-article'>
             
             <header className={`poke__info-header bg-${poke?.types[0].type.name}`}>
             <img className='pokemon__info-img' src={poke?.sprites.other['official-artwork'].front_default} alt="" />
@@ -93,7 +109,7 @@ const PokeInfo = () => {
 
 
         </section>
-        </article>
+        </section>
 
         <article className='poke__info-card-2'>
             <header className='poke__info-card-2-header'>
@@ -110,7 +126,10 @@ const PokeInfo = () => {
         </ul>
         </section>
         </article>
-       
+       <footer className='poke__info-footer'>
+        <button className='return__button' onClick={handleBackClick}>Back</button>
+        <button className='scroll__button' onClick={handleScrollToTop}>Go top</button>
+       </footer>
         </>
        
       

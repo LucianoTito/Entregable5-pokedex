@@ -15,6 +15,17 @@ const Pokedex = () => {
 
   const [selectValue, setSelectValue] = useState('allpokemons')
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  const handleBackClick = () => {
+    window.history.back();
+  };
+
   
 
   useEffect(() => {
@@ -44,7 +55,8 @@ const Pokedex = () => {
      
   
   return (
-<div className='pokedex'>
+<article className='pokedex'>
+  
   <header className='pokedex__header'>
    
     <img className='pokedex_svg' src="/images/logo-pokedex.svg" alt="pokedex_logo" />
@@ -61,7 +73,7 @@ const Pokedex = () => {
 </form>
 </div>
  
-  <div className='pokedex__container-pokemon'>
+  <section className='pokedex__container-pokemon'>
     {
       pokemons?.results.map(pokemon => (
         <PokeCard
@@ -69,8 +81,13 @@ const Pokedex = () => {
           pokemon={pokemon} />
       ))
     }
-  </div>
-</div>
+  </section>
+      <footer className='pokedex__footer'>
+        <button className='return__pokedex-button' onClick={handleBackClick}>Back page</button>
+        <button className='scroll__button' onClick={handleScrollToTop}>Go top</button>
+
+      </footer>
+</article>
 
   )
 }
